@@ -1,0 +1,12 @@
+<div class="artist-card">
+  {{#if images.[0]}}
+		{{#with images.[0]}}
+			<img src="{{url}}">
+		{{/with}} 
+		{{else}} <img src="../../public/images/notfound.png">
+	{{/if}}
+	<div class="artist-name">
+		<h3>{{name}}</h3>
+	</div>
+	<button class="btn-albuns"><a href="/albums?artistID={{id}}">View Albums</a>
+</div>
